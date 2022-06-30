@@ -67,8 +67,48 @@ $(function() {
 
 
 //lightbox 
-$('.lightbox').fadeIn(2000);      
+//$('.lightbox').fadeIn(2000);    
 
+
+////selectors with tagName,class,ID and other things
+// $('p').css('background-color','pink')
+// $("input[type='text']").css('background-color','pink')
+// $("input[type='email']").css('background-color','red')
+// $('h2,p,input').css('background-color','red')
+// $('p:first').css('background-color','red')
+// $('li:last').css('background-color','red')
+// $('li:even').css('background-color','red')
+// $('li:odd').css('background-color','green')
+// $('input:text').css('background-color','green')  //not worked
+// $('input:checked').css('background-color','green') //not worked
+// $('input:checked').css('background-color','green')
+
+// $('#list').find("li").css('background-color','green')
+// $('#list').children("li").css('background-color','green')
+// $('#list').parents().css('background-color','green')
+// $('#list').parents().css('background-color','green')  //all parents
+// $('#list').parent().css('background-color','green')  //single level parent
+// $('#list').siblings().css('background-color','green')  
+// $('#list').siblings('p').css('background-color','green')  
+// $('#list').prev().css('background-color','green')  
+// $('#list').next().css('background-color','green')  
+
+
+// $('#list').find('li').filter(':even').css('background-color','yellow')  //
+
+// $('li').filter(function(index){
+//     return index%3===1;
+//     }).css('background-color','yellow')  ;
+
+// $('li').first().css('background-color','yellow')  
+// $('li').last().css('background-color','yellow')  
+// $('li').eq(1).css('background-color','yellow')   //2nd element
+// $('li').eq(4).css('background-color','yellow')   //5th element
+// $('li').eq(-2).css('background-color','yellow')   //2nd last
+
+//  $('li').not(':first').css('background-color','yellow')  //expect first all ele
+ $('li').not(function(index){}).css('background-color','yellow')  //pass the fun also
+ 
 });
 
 
